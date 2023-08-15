@@ -7,6 +7,7 @@ body {
 header {
   color: #333;
   padding: 2rem;
+  text-align: center;
 }
 
 /* メインコンテンツのフォントサイズを変更 */
