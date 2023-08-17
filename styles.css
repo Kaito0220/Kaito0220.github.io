@@ -33,6 +33,14 @@ nav ul li a {
   padding: 5px 10px;
 }
 
+.tabs {
+  display: flex;
+  justify-content: space-around; /* タブを均等に配置 */
+  padding: 0; /* 余白を削除 */
+  list-style: none; /* リストのマーカーを削除 */
+}
+
+
 /* フッターの背景色とテキスト色を変更 */
 footer {
   background-color: #333;
