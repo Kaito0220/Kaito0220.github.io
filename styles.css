@@ -41,6 +41,13 @@ main {
   text-decoration: none;
 }
 
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* 丸型にするための値 */
+}
+
+
 
 /* フッターの背景色とテキスト色を変更 */
 footer {
@@ -56,10 +63,5 @@ footer {
   text-align: center;
 }
 
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%; /* 丸型にするための値 */
-}
 
 
