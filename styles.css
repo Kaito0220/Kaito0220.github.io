@@ -1,6 +1,7 @@
 /* 背景色を変更 */
 body {
   background-color: #f5f5f5;
+  font-family: "メイリオ", sans-serif;
 }
 
 /* ヘッダーのテキスト色と余白を変更 */
@@ -45,4 +46,5 @@ footer {
   margin: 0 auto;
   text-align: center;
 }
+
 
