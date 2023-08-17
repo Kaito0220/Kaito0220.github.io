@@ -24,7 +24,7 @@ main {
   justify-content: space-around; /* タブを均等に配置 */
   padding: 0; /* 余白を削除 */
   list-style: none; /* リストのマーカーを削除 */
-  background-color: #555; /* タブの背景色を変更 */
+  background-color: #0768fa; /* タブの背景色を変更 */
   margin: 0; /* マージンを削除 */
 }
 
