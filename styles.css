@@ -1,12 +1,14 @@
 /* 背景色を変更 */
 body {
-  background-color: #add8e6;
+  background-color: #ffffff;
+  color: #0768fa;
   font-family: "メイリオ", sans-serif;
 }
 
 /* ヘッダーのテキスト色と余白を変更 */
 header {
-  color: #333;
+  background-color: #0768fa;
+  color: #ffffff;
   padding: 2rem;
   text-align: center;
 }
@@ -24,7 +26,7 @@ main {
   justify-content: space-around; /* タブを均等に配置 */
   padding: 0; /* 余白を削除 */
   list-style: none; /* リストのマーカーを削除 */
-  background-color: #0768fa; /* タブの背景色を変更 */
+  background-color: #222222; /* タブの背景色を変更 */
   margin: 0; /* マージンを削除 */
 }
 
@@ -42,7 +44,7 @@ main {
 
 /* フッターの背景色とテキスト色を変更 */
 footer {
-  background-color: #0768fa;
+  background-color: #d1cc30;
   color: #fff;
   padding: 1rem;
   text-align: center;
