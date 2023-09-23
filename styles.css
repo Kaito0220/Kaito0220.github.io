@@ -6,7 +6,7 @@ body {
   background-attachment: fixed; /* スクロールしても背景が固定されるようにする */
   background-position: center; /* 画像を中央に配置 */
   /* 以下は背景画像に関連するスタイル */
-  color: #0768fa; /* テキストの色を設定 */
+  color: #012d6e; /* テキストの色を設定 */
   font-family: "メイリオ", sans-serif;
 }
 
