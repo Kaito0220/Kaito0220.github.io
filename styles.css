@@ -1,7 +1,12 @@
 /* 背景色を変更 */
 body {
-  background-color: #ffffff;
-  color: #0768fa;
+  background-image: url('/background01.jpeg'); /* 画像のURLを指定 */
+  background-size: cover; /* 画像をカバーするように調整 */
+  background-repeat: no-repeat; /* 背景画像の繰り返しを無効にする */
+  background-attachment: fixed; /* スクロールしても背景が固定されるようにする */
+  background-position: center; /* 画像を中央に配置 */
+  /* 以下は背景画像に関連するスタイル */
+  color: #0768fa; /* テキストの色を設定 */
   font-family: "メイリオ", sans-serif;
 }
 
