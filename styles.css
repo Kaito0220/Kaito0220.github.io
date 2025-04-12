@@ -6,16 +6,33 @@
     --text-color: #333;
     --background-color: #f5f5f5;
     --mobile-breakpoint: 768px;
+    --card-bg: rgba(255, 255, 255, 0.9);
 }
 
 body {
-    background-color: var(--background-color);
+    background-image: url('/background02.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     color: var(--text-color);
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     font-size: 16px;
+    min-height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: -1;
 }
 
 /* ヘッダー */
@@ -172,6 +189,125 @@ footer {
     font-size: 0.9rem;
 }
 
+/* 観戦記録ページ */
+.game-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.game-content {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.game-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.game-header h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: var(--background-color);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 150px;
+}
+
+.stat-card h3 {
+    color: var(--primary-color);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.stat-card p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.game-item {
+    background: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.game-item:hover {
+    transform: translateY(-5px);
+}
+
+.game-date {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.game-result {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.result-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.win { color: #28a745; }
+.loss { color: #dc3545; }
+.draw { color: #ffc107; }
+
+.game-score {
+    font-size: 1.2rem;
+}
+
+.game-venue {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.game-video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.game-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
 /* レスポンシブデザイン */
 @media (min-width: 768px) {
     body {
@@ -241,6 +377,29 @@ footer {
     .question-box img {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-container {
+        margin: 1rem auto;
+    }
+
+    .game-content {
+        padding: 1rem;
+    }
+
+    .game-stats {
+        gap: 1rem;
+    }
+
+    .stat-card {
+        padding: 0.8rem 1.5rem;
+        min-width: 120px;
+    }
+
+    .game-list {
+        grid-template-columns: 1fr;
     }
 }
 
