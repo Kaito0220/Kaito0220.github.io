@@ -204,7 +204,7 @@ main {
 
 /* フッター */
 footer {
-    background-color: var(--primary-color);
+    background-color: #1e88e5;
     color: white;
     text-align: center;
     padding: 0.8rem;
@@ -637,6 +637,33 @@ footer {
 
 .next-year-link:hover {
     background-color: #388E3C;
+}
+
+/* 流れる文字のアニメーション */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #1e88e5;
+    color: white;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 
