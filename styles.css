@@ -722,6 +722,7 @@ footer {
     line-height: 1;
     top: 50%;
     transform: translateY(-50%);
+    white-space: nowrap;
 }
 
 @keyframes marquee {
