@@ -136,6 +136,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 /* 共通コンテンツコンテナ */
@@ -366,6 +367,8 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-image-container {
