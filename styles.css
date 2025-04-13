@@ -574,7 +574,7 @@ footer {
     }
 
     .marquee-text {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
         animation: marquee 12s linear infinite;
         padding-right: 1rem;
     }
@@ -626,7 +626,7 @@ footer {
     }
 
     .marquee-text {
-        font-size: 0.85rem;
+        font-size: 1rem;
         animation: marquee 10s linear infinite;
     }
 }
@@ -700,7 +700,7 @@ footer {
     white-space: nowrap;
     animation: marquee 15s linear infinite;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     left: 100%;
     padding-right: 2rem;
