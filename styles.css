@@ -59,48 +59,43 @@ header h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
+    padding: 0;
     list-style: none;
-    background-color: transparent;
+    background-color: #000;
     margin: 0;
     width: 100%;
-    gap: 1rem;
 }
 
 .tabs li {
     position: relative;
-    padding: 0.8rem 2rem;
+    padding: 1rem 2rem;
     text-align: center;
     transition: all 0.3s;
-    background-color: #b3e0ff; /* 水色の背景 */
-    border-radius: 50px; /* 楕円形 */
+    background-color: transparent;
     min-width: 150px;
 }
 
 .tabs li.active {
-    background-color: #b3e0ff; /* 水色の背景 */
+    background-color: transparent;
     position: relative;
 }
 
-.tabs li.active::before {
+.tabs li.active::after {
     content: '';
     position: absolute;
-    top: -4px;
-    left: -4px;
-    right: -4px;
-    bottom: -4px;
-    border: 2px solid #000; /* 黒色の枠 */
-    border-radius: 50px; /* 楕円形 */
-    z-index: -1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #fff;
 }
 
 .tabs li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .tabs li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     font-weight: 500;
     font-size: 1rem;
@@ -111,7 +106,7 @@ header h1 {
 }
 
 .tabs li.active a {
-    color: #000;
+    color: #fff;
     font-weight: 700;
 }
 
