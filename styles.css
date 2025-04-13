@@ -57,22 +57,25 @@ header h1 {
 /* ナビゲーション */
 .tabs {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 0;
     list-style: none;
     background-color: #000;
     margin: 0;
     width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .tabs li {
     position: relative;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     text-align: center;
     transition: all 0.3s;
     background-color: transparent;
-    min-width: 150px;
+    min-width: 120px;
+    flex-shrink: 0;
 }
 
 .tabs li.active {
@@ -478,9 +481,21 @@ footer {
     .game-list {
         grid-template-columns: 1fr;
     }
+
+    .tabs {
+        justify-content: flex-start;
+    }
+
+    .tabs li {
+        padding: 0.8rem 1.2rem;
+        min-width: 100px;
+    }
+
+    .tabs li a {
+        font-size: 0.9rem;
+    }
 }
 
-/* 小さい画面向けの調整 */
 @media (max-width: 480px) {
     .profile-container {
         padding: 1rem;
@@ -501,6 +516,15 @@ footer {
 
     .info-section p {
         font-size: 0.9rem;
+    }
+
+    .tabs li {
+        padding: 0.7rem 1rem;
+        min-width: 90px;
+    }
+
+    .tabs li a {
+        font-size: 0.8rem;
     }
 }
 
