@@ -562,15 +562,26 @@ footer {
 
     .tabs {
         height: 50px;
+        justify-content: flex-start;
+        padding: 0 10px;
     }
 
     .tabs li {
         min-width: 100px;
+        margin: 0 5px;
     }
 
     .tabs li a {
         font-size: 0.9rem;
         padding: 0.8rem 1rem;
+    }
+
+    .tabs li:first-child {
+        margin-left: 0;
+    }
+
+    .tabs li:last-child {
+        margin-right: 0;
     }
 
     .game-navigation {
@@ -679,10 +690,12 @@ footer {
 
     .tabs {
         height: 45px;
+        padding: 0 5px;
     }
 
     .tabs li {
         min-width: 90px;
+        margin: 0 3px;
     }
 
     .tabs li a {
