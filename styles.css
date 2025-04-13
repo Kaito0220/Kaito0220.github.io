@@ -85,22 +85,22 @@ header h1 {
     height: var(--nav-height);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .tabs::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari, Opera */
+    display: none;
 }
 
 .tabs li {
     position: relative;
-    padding: 0 1.5rem;
+    padding: 0;
     text-align: center;
     transition: all 0.3s;
     background-color: transparent;
     flex: 0 0 auto;
-    min-width: 100px;
+    min-width: 120px;
     z-index: 1;
     display: flex;
     align-items: center;
@@ -126,7 +126,7 @@ header h1 {
     width: 100%;
     height: 100%;
     transition: all 0.3s;
-    padding: 1rem 0;
+    padding: 1rem 1.5rem;
 }
 
 .tabs li:hover {
@@ -552,13 +552,12 @@ footer {
     }
 
     .tabs li {
-        padding: 0 1rem;
-        min-width: 90px;
+        min-width: 100px;
     }
 
     .tabs li a {
         font-size: 0.9rem;
-        padding: 0.8rem 0;
+        padding: 0.8rem 1rem;
     }
 
     .game-navigation {
@@ -659,13 +658,12 @@ footer {
     }
 
     .tabs li {
-        padding: 0 0.8rem;
-        min-width: 80px;
+        min-width: 90px;
     }
 
     .tabs li a {
         font-size: 0.8rem;
-        padding: 0.6rem 0;
+        padding: 0.6rem 0.8rem;
     }
 
     .content-card {
@@ -924,6 +922,18 @@ footer {
     .btn {
         padding: 0.6rem 1.2rem;
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: calc(var(--header-height) + 50px + 2rem) auto 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        margin: calc(var(--header-height) + 45px + 2rem) auto 2rem;
     }
 }
 
