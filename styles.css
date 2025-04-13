@@ -45,9 +45,9 @@ body::before {
 
 /* ヘッダー */
 header {
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), #003366);
     color: white;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
     box-shadow: 0 2px 10px rgba(0,0,0,0.2);
     width: 100%;
@@ -64,9 +64,12 @@ header h1 {
     margin: 0;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    padding: 0 2rem;
 }
+
 
 /* ナビゲーション */
 .tabs {
@@ -521,8 +524,19 @@ footer {
         --nav-height: 50px;
     }
 
+    header {
+        height: 60px;
+    }
+
     header h1 {
         font-size: 1.5rem;
+        padding: 0 1.5rem;
+    }
+
+    header h1::before,
+    header h1::after {
+        width: 20px;
+        height: 20px;
     }
 
     .game-container {
@@ -547,7 +561,6 @@ footer {
     }
 
     .tabs {
-        justify-content: flex-start;
         height: 50px;
     }
 
@@ -623,8 +636,19 @@ footer {
         --nav-height: 40px;
     }
 
+    header {
+        height: 50px;
+    }
+
     header h1 {
         font-size: 1.2rem;
+        padding: 0 1.2rem;
+    }
+
+    header h1::before,
+    header h1::after {
+        width: 15px;
+        height: 15px;
     }
 
     .profile-container {
