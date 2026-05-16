@@ -3,94 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaito_FIGHTERS - 写真</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kaito_FIGHTERS - フォト</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kaito_FIGHTERS</h1>
-    </header>
-    <nav>
-        <ul class="tabs">
-            <li><a href="/index.html">プロフィール</a></li>
-            <li><a href="/game2024.html">観戦記録</a></li>
-            <li><a href="/food.html">球場飯</a></li>
-            <li><a href="/picture.html">写真</a></li>
-        </ul>
-    </nav>
-    <div class="content-container">
-        <div class="content-card">
-            <div class="content-header">
-                <h2>写真</h2>
-            </div>
-            <div class="media-grid">
-                <!-- 写真アイテムの例 -->
-                <div class="media-item">
-                    <img src="/picture012.PNG" alt="写真1" height="300px" width="300px">
-                    <h3>タイトル1</h3>
-                    <p>説明文1</p>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="サイトナビゲーション">
+            <a class="brand" href="index.html" aria-label="Kaito_FIGHTERS ホーム">
+                <span class="brand-mark">F</span>
+                <span>
+                    <strong>Kaito_FIGHTERS</strong>
+                    <small>Fan Log App</small>
+                </span>
+            </a>
+
+            <nav class="side-nav">
+                <a href="index.html">プロフィール</a>
+                <a href="game2026.html">2026 観戦記録</a>
+                <a href="game2025.html">2025 観戦記録</a>
+                <a href="game2024.html">2024 観戦記録</a>
+                <a href="game.html">2023 観戦記録</a>
+                <a class="active" href="picture.html">フォト</a>
+                <a href="food.html">球場グルメ</a>
+            </nav>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Photo Gallery</p>
+                    <h1>球場フォト</h1>
                 </div>
-                <div class="media-item">
-                    <img src="/picture011.PNG" alt="写真2" height="300px" width="300px">
-                    <h3>タイトル2</h3>
-                    <p>説明文2</p>
+                <a class="primary-action" href="food.html">球場グルメへ</a>
+            </header>
+
+            <section class="gallery-hero" aria-labelledby="gallery-title">
+                <div>
+                    <p class="status-pill">12 Photos</p>
+                    <h2 id="gallery-title">現地観戦の景色をまとめて保存</h2>
+                    <p>球場で撮った写真を、スマホでも見やすいギャラリーに整理しました。</p>
                 </div>
-                <div class="media-item">
-                    <img src="/picture010.PNG" alt="写真3" height="300px" width="300px">
-                    <h3>タイトル3</h3>
-                    <p>説明文3</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture009.PNG" alt="写真4" height="300px" width="300px">
-                    <h3>タイトル4</h3>
-                    <p>説明文4</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture008.PNG" alt="写真5" height="300px" width="300px">
-                    <h3>タイトル5</h3>
-                    <p>説明文5</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture007.PNG" alt="写真6" height="300px" width="300px">
-                    <h3>タイトル6</h3>
-                    <p>説明文6</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture006.PNG" alt="写真7" height="300px" width="300px">
-                    <h3>タイトル7</h3>
-                    <p>説明文7</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture005.PNG" alt="写真8" height="300px" width="300px">
-                    <h3>タイトル8</h3>
-                    <p>説明文8</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture004.PNG" alt="写真9" height="300px" width="300px">
-                    <h3>タイトル9</h3>
-                    <p>説明文9</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture003.PNG" alt="写真10" height="300px" width="300px">
-                    <h3>タイトル10</h3>
-                    <p>説明文10</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture002.PNG" alt="写真11" height="300px" width="300px">
-                    <h3>タイトル11</h3>
-                    <p>説明文11</p>
-                </div>
-                <div class="media-item">
-                    <img src="/picture001.PNG" alt="写真12" height="300px" width="300px">
-                    <h3>タイトル12</h3>
-                    <p>説明文12</p>
-                </div>
-            </div>
-        </div>
+                <img src="picture012.PNG" alt="球場で撮影した写真">
+            </section>
+
+            <section class="photo-grid" aria-label="写真一覧">
+                <a class="photo-tile photo-tile-large" href="picture012.PNG">
+                    <img src="picture012.PNG" alt="球場フォト 12">
+                    <span>Photo 12</span>
+                </a>
+                <a class="photo-tile" href="picture011.PNG">
+                    <img src="picture011.PNG" alt="球場フォト 11">
+                    <span>Photo 11</span>
+                </a>
+                <a class="photo-tile" href="picture010.PNG">
+                    <img src="picture010.PNG" alt="球場フォト 10">
+                    <span>Photo 10</span>
+                </a>
+                <a class="photo-tile" href="picture009.PNG">
+                    <img src="picture009.PNG" alt="球場フォト 9">
+                    <span>Photo 09</span>
+                </a>
+                <a class="photo-tile" href="picture008.PNG">
+                    <img src="picture008.PNG" alt="球場フォト 8">
+                    <span>Photo 08</span>
+                </a>
+                <a class="photo-tile" href="picture007.PNG">
+                    <img src="picture007.PNG" alt="球場フォト 7">
+                    <span>Photo 07</span>
+                </a>
+                <a class="photo-tile" href="picture006.PNG">
+                    <img src="picture006.PNG" alt="球場フォト 6">
+                    <span>Photo 06</span>
+                </a>
+                <a class="photo-tile" href="picture005.PNG">
+                    <img src="picture005.PNG" alt="球場フォト 5">
+                    <span>Photo 05</span>
+                </a>
+                <a class="photo-tile" href="picture004.PNG">
+                    <img src="picture004.PNG" alt="球場フォト 4">
+                    <span>Photo 04</span>
+                </a>
+                <a class="photo-tile" href="picture003.PNG">
+                    <img src="picture003.PNG" alt="球場フォト 3">
+                    <span>Photo 03</span>
+                </a>
+                <a class="photo-tile" href="picture002.PNG">
+                    <img src="picture002.PNG" alt="球場フォト 2">
+                    <span>Photo 02</span>
+                </a>
+                <a class="photo-tile" href="picture001.PNG">
+                    <img src="picture001.PNG" alt="球場フォト 1">
+                    <span>Photo 01</span>
+                </a>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Kaito_FIGHTERS</p>
+            </footer>
+        </main>
     </div>
-    <footer>
-        <p>&copy; 2024 Kaito_FIGHTERS</p>
-    </footer>
 </body>
 </html>

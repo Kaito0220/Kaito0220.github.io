@@ -360,6 +360,94 @@ p {
     font-size: 0.92rem;
 }
 
+.gallery-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+    gap: 22px;
+    align-items: stretch;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.75);
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(238, 246, 248, 0.86));
+    box-shadow: var(--shadow);
+}
+
+.gallery-hero > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(24px, 5vw, 46px);
+}
+
+.gallery-hero h2 {
+    max-width: 620px;
+    margin-bottom: 12px;
+    font-size: clamp(1.85rem, 5vw, 3.2rem);
+    line-height: 1.12;
+    letter-spacing: 0;
+}
+
+.gallery-hero p:not(.status-pill) {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+.gallery-hero img {
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-auto-flow: dense;
+    gap: 14px;
+}
+
+.photo-tile {
+    display: block;
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: 0 8px 24px rgba(30, 45, 55, 0.08);
+    text-decoration: none;
+}
+
+.photo-tile-large {
+    grid-column: span 2;
+    grid-row: span 2;
+    min-height: 454px;
+}
+
+.photo-tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.35s ease;
+}
+
+.photo-tile span {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--ink);
+    font-size: 0.82rem;
+    font-weight: 900;
+}
+
+.photo-tile:hover img {
+    transform: scale(1.04);
+}
+
 /* Legacy page compatibility */
 body > header {
     width: 100%;
@@ -626,7 +714,8 @@ footer {
     }
 
     .hero-panel,
-    .content-layout {
+    .content-layout,
+    .gallery-hero {
         grid-template-columns: 1fr;
     }
 
@@ -637,6 +726,15 @@ footer {
 
     .metric-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .photo-tile-large {
+        grid-column: span 2;
+        min-height: 360px;
     }
 }
 
@@ -662,5 +760,16 @@ footer {
 
     .hero-copy {
         padding: 22px;
+    }
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-tile,
+    .photo-tile-large {
+        grid-column: auto;
+        grid-row: auto;
+        min-height: 260px;
     }
 }
