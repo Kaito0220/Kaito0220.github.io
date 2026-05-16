@@ -500,6 +500,7 @@ p {
 .data-table {
     width: 100%;
     border-collapse: collapse;
+    table-layout: fixed;
     font-size: 0.95rem;
     font-variant-numeric: tabular-nums;
 }
@@ -530,12 +531,17 @@ p {
 
 .data-table th:first-child,
 .data-table td:first-child {
-    width: 46%;
+    width: auto;
 }
 
-.data-table th:not(:first-child),
-.data-table td:not(:first-child) {
-    text-align: right;
+.data-table th,
+.data-table td {
+    text-align: center;
+}
+
+.data-table th:first-child,
+.data-table td:first-child {
+    text-align: left;
 }
 
 .data-table tbody tr:hover td {
