@@ -4,66 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaito_FIGHTERS</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kaito_FIGHTERS</h1>
-    </header>
-    <nav>
-        <ul class="tabs">
-            <li class="active"><a href="/index.html">プロフィール</a></li>
-            <li><a href="/game2025.html">観戦記録</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="profile-container">
-            <div class="profile-image-container">
-                <img src="/IMG_8017.JPG" class="profile-image" alt="プロフィール画像">
-            </div>
-            <div class="profile-info">
-                <div class="info-section">
-                    <h3>名前</h3>
-                    <p>Kaito</p>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="サイトナビゲーション">
+            <a class="brand" href="index.html" aria-label="Kaito_FIGHTERS ホーム">
+                <span class="brand-mark">F</span>
+                <span>
+                    <strong>Kaito_FIGHTERS</strong>
+                    <small>Fan Log App</small>
+                </span>
+            </a>
+
+            <nav class="side-nav">
+                <a class="active" href="index.html">プロフィール</a>
+                <a href="game2025.html">2025 観戦記録</a>
+                <a href="game2024.html">2024 観戦記録</a>
+                <a href="game.html">2023 観戦記録</a>
+                <a href="picture.html">フォト</a>
+                <a href="food.html">球場グルメ</a>
+            </nav>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Hokkaido Nippon-Ham Fighters</p>
+                    <h1>ファイターズ観戦ログ</h1>
                 </div>
-                <div class="info-section">
-                    <h3>居住地</h3>
-                    <p>東京</p>
-                </div>
-                <div class="info-section">
-                    <h3>好きな球団</h3>
-                    <p>北海道日本ハムファイターズ</p>
-                </div>
-                <div class="info-section">
-                    <h3>推し選手</h3>
-                    <p>伊藤大海、淺間大基、阪口樂</p>
-                </div>
-                <div class="info-section">
-                    <h3>よく行く球場</h3>
-                    <p>ZOZOマリンスタジアム、ベルーナドーム</p>
-                </div>
-                <div class="info-section">
-                    <h3>各種アカウント</h3>
-                    <div class="social-links">
-                        <a href="https://twitter.com/kite_fighters" class="social-link">
-                            <img src="/twitter.png" alt="twitter">
-                            <span>@kite_fighters</span>
-                        </a>
-                        <a href="https://instagram.com/kaito._f15" class="social-link">
-                            <img src="/instagram.png" alt="instagram">
-                            <span>kaito._f15</span>
-                        </a>
-                        <p>Fトレカ: kaito_f44</p>
+                <a class="primary-action" href="game2025.html">最新の観戦記録</a>
+            </header>
+
+            <section class="hero-panel" aria-labelledby="profile-title">
+                <div class="hero-copy">
+                    <p class="status-pill">Fighters Fan Profile</p>
+                    <h2 id="profile-title">Kaito</h2>
+                    <p>
+                        北海道日本ハムファイターズを応援する観戦ログ。
+                        現地観戦、写真、球場グルメ、SNSをひとつにまとめています。
+                    </p>
+                    <div class="quick-actions" aria-label="外部リンク">
+                        <a href="https://twitter.com/kite_fighters">X / Twitter</a>
+                        <a href="https://instagram.com/kaito._f15">Instagram</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Kaito_FIGHTERS</p>
-    </footer>
+                <div class="hero-photo">
+                    <img src="IMG_8017.JPG" alt="球場で撮影したプロフィール写真">
+                </div>
+            </section>
+
+            <section class="metric-grid" aria-label="プロフィール概要">
+                <article class="metric-card">
+                    <span>拠点</span>
+                    <strong>東京</strong>
+                </article>
+                <article class="metric-card">
+                    <span>推し球団</span>
+                    <strong>北海道日本ハム</strong>
+                </article>
+                <article class="metric-card">
+                    <span>よく行く球場</span>
+                    <strong>ZOZO / ベルーナ</strong>
+                </article>
+                <article class="metric-card">
+                    <span>2025 現地成績</span>
+                    <strong>12勝6敗1分</strong>
+                </article>
+            </section>
+
+            <section class="content-layout">
+                <article class="panel">
+                    <div class="panel-heading">
+                        <span>Profile</span>
+                        <h2>基本情報</h2>
+                    </div>
+                    <dl class="profile-list">
+                        <div>
+                            <dt>名前</dt>
+                            <dd>Kaito</dd>
+                        </div>
+                        <div>
+                            <dt>好きな球団</dt>
+                            <dd>北海道日本ハムファイターズ</dd>
+                        </div>
+                        <div>
+                            <dt>推し選手</dt>
+                            <dd>伊藤大海、浅間大基、万波中正</dd>
+                        </div>
+                        <div>
+                            <dt>Fトレカ</dt>
+                            <dd>kaito_f44</dd>
+                        </div>
+                    </dl>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-heading">
+                        <span>Links</span>
+                        <h2>コンテンツ</h2>
+                    </div>
+                    <div class="app-links">
+                        <a href="game2025.html">
+                            <strong>観戦記録</strong>
+                            <span>試合結果と動画を年別にチェック</span>
+                        </a>
+                        <a href="picture.html">
+                            <strong>フォトギャラリー</strong>
+                            <span>球場で撮った写真をまとめて表示</span>
+                        </a>
+                        <a href="food.html">
+                            <strong>球場グルメ</strong>
+                            <span>現地で食べたメニューの記録</span>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
-
-
