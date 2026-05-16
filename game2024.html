@@ -8,15 +8,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Kaito_FIGHTERS</h1>
-    </header>
-    <nav>
-      <ul class="tabs">
-        <li><a href="/index.html">プロフィール</a></li>
-            <li class="active"><a href="/game2025.html">観戦記録</a></li>
-    </ul>
-    </nav>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="サイトナビゲーション">
+            <a class="brand" href="index.html" aria-label="Kaito_FIGHTERS ホーム">
+                <span class="brand-mark">F</span>
+                <span>
+                    <strong>Kaito_FIGHTERS</strong>
+                    <small>Fan Log App</small>
+                </span>
+            </a>
+
+            <nav class="side-nav">
+                <a href="index.html">プロフィール</a>
+                <a href="game2025.html">2025 観戦記録</a>
+                <a class="active" href="game2024.html">2024 観戦記録</a>
+                <a href="game.html">2023 観戦記録</a>
+                <a href="picture.html">フォト</a>
+                <a href="food.html">球場グルメ</a>
+            </nav>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Game Log 2024</p>
+                    <h1>2024 観戦記録</h1>
+                </div>
+                <a class="primary-action" href="game2025.html">2025年を見る</a>
+            </header>
+
     <div class="game-container">
         <div class="game-content">
             <div class="game-header">
@@ -259,13 +279,15 @@
                 </div>
             </div>
             <div class="game-navigation">
-                <a href="/game.html" class="nav-link">2023年の観戦記録を見る</a>
-                <a href="/game2025.html" class="nav-link">2025年の観戦記録を見る</a>
+                <a href="game.html" class="nav-link">2023年の観戦記録を見る</a>
+                <a href="game2025.html" class="nav-link">2025年の観戦記録を見る</a>
             </div>
         </div>
     </div>
     <footer>
         <p>&copy; 2024 Kaito_FIGHTERS</p>
     </footer>
+        </main>
+    </div>
 </body>
 </html>
