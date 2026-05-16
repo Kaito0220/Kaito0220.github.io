@@ -448,6 +448,14 @@ p {
     transform: scale(1.04);
 }
 
+.food-grid .photo-tile {
+    min-height: 260px;
+}
+
+.food-grid .photo-tile-large {
+    min-height: 534px;
+}
+
 /* Legacy page compatibility */
 body > header {
     width: 100%;
@@ -736,6 +744,10 @@ footer {
         grid-column: span 2;
         min-height: 360px;
     }
+
+    .food-grid .photo-tile-large {
+        min-height: 430px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -771,5 +783,10 @@ footer {
         grid-column: auto;
         grid-row: auto;
         min-height: 260px;
+    }
+
+    .food-grid .photo-tile,
+    .food-grid .photo-tile-large {
+        min-height: 280px;
     }
 }

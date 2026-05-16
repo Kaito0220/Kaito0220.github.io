@@ -3,33 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaito_FIGHTERS - 球場飯</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <title>Kaito_FIGHTERS - 球場メシ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Kaito_FIGHTERS</h1>
-    </header>
-    <nav>
-        <ul class="tabs">
-            <li><a href="index.html">プロフィール</a></li>
-            <li><a href="game2026.html">観戦記録</a></li>
-            <li><a href="food.html">球場飯</a></li>
-            <li><a href="picture.html">写真</a></li>
-        </ul>
-    </nav>
-    <div class="tab-content" id="food">
-        <h2>球場飯</h2>
-        <img src="/food001.jpg" height="300px" width="300px">
-        <img src="/food002.jpg" height="300px" width="300px">
-        <img src="/food003.jpg" height="300px" width="300px">
-        <img src="/food004.jpg" height="300px" width="300px">
-        <img src="/food005.jpg" height="300px" width="300px">
-        <img src="/food006.jpg" height="300px" width="300px">
-      </div>
-    <footer>
-        <p>&copy; 2024 Kaito_FIGHTERS</p>
-    </footer>
+    <div class="app-shell">
+        <aside class="sidebar" aria-label="サイトナビゲーション">
+            <a class="brand" href="index.html" aria-label="Kaito_FIGHTERS ホーム">
+                <span class="brand-mark">F</span>
+                <span>
+                    <strong>Kaito_FIGHTERS</strong>
+                    <small>Fan Log App</small>
+                </span>
+            </a>
+
+            <nav class="side-nav">
+                <a href="index.html">プロフィール</a>
+                <a href="game2026.html">2026 観戦記録</a>
+                <a href="game2025.html">2025 観戦記録</a>
+                <a href="game2024.html">2024 観戦記録</a>
+                <a href="game.html">2023 観戦記録</a>
+                <a href="picture.html">フォト</a>
+                <a class="active" href="food.html">球場メシ</a>
+            </nav>
+        </aside>
+
+        <main class="main-panel">
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">Stadium Food</p>
+                    <h1>球場メシ</h1>
+                </div>
+                <a class="primary-action" href="picture.html">フォトへ</a>
+            </header>
+
+            <section class="gallery-hero food-hero" aria-labelledby="food-title">
+                <div>
+                    <p class="status-pill">6 Foods</p>
+                    <h2 id="food-title">現地で食べたメニューをまとめて保存</h2>
+                    <p>観戦の日に楽しんだ球場飯を、写真でさっと振り返れるように整理しました。</p>
+                </div>
+                <img src="food001.jpg" alt="球場で食べたメシ">
+            </section>
+
+            <section class="photo-grid food-grid" aria-label="球場メシ一覧">
+                <a class="photo-tile photo-tile-large" href="food001.jpg">
+                    <img src="food001.jpg" alt="球場メシ 1">
+                    <span>Food 01</span>
+                </a>
+                <a class="photo-tile" href="food002.jpg">
+                    <img src="food002.jpg" alt="球場メシ 2">
+                    <span>Food 02</span>
+                </a>
+                <a class="photo-tile" href="food003.jpg">
+                    <img src="food003.jpg" alt="球場メシ 3">
+                    <span>Food 03</span>
+                </a>
+                <a class="photo-tile" href="food004.jpg">
+                    <img src="food004.jpg" alt="球場メシ 4">
+                    <span>Food 04</span>
+                </a>
+                <a class="photo-tile" href="food005.jpg">
+                    <img src="food005.jpg" alt="球場メシ 5">
+                    <span>Food 05</span>
+                </a>
+                <a class="photo-tile" href="food006.jpg">
+                    <img src="food006.jpg" alt="球場メシ 6">
+                    <span>Food 06</span>
+                </a>
+            </section>
+
+            <footer>
+                <p>&copy; 2026 Kaito_FIGHTERS</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
